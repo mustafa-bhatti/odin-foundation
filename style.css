@@ -15,14 +15,17 @@ p {
 .box-one {
     background-color: red;
     padding: 10px;
-    margin: 100px;
+
+    margin: 10px;
     height: 100px;
-    width: 100px;
-    border: 20px solid brown;
+    width: 200px;
+    border: 10px solid brown;
     box-sizing: border-box;
+    display: inline;
 }
 
 .box-two {
+    display: inline;
     background-color: blue;
     border: 10px solid white;
     margin: 20px;
