@@ -9,3 +9,8 @@ p {
     color: rgba(12, 248, 248, 0.778);
     text-align: center;
 }
+
+* {
+    outline: 2px solid red;
+    border: 20px;
+}
