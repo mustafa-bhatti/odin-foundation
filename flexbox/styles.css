@@ -1,9 +1,13 @@
 .flex-container > * {
     background-color: peachpuff;
-    height: 100px;   
+    height: 100px;  
+    flex: 1 1 0; 
     /* outline: 2px solid red; */
     /* width: 100px; */
-    flex: 1 1 0;
+    /* flex: 1 1 0; */
+    /* align-items: center; */
+
+
 }
 .three > * {
     /* flex-direction: column; */
@@ -27,12 +31,14 @@
 
 .flex-container{
     background-color: lightblue;
-    width: 900px;
-    gap: 15rem;
+    width: 1200px;
+    gap: 1rem;
     text-align: center;
-    justify-content: space-between;
     padding: 10px;
     display: flex;
+    justify-content: center;
+
+    /* align-items: center; */
 }
 
 * {
