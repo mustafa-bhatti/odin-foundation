@@ -1,24 +1,25 @@
 .flex-container > * {
+    border: 1px solid;
     background-color: peachpuff;
     height: 100px;  
-    flex: 1 1 0; 
+    /* flex: 1 1 0;  */
     /* outline: 2px solid red; */
     /* width: 100px; */
     /* flex: 1 1 0; */
     /* align-items: center; */
 
-
 }
+
+/* 
 .three > * {
-    /* flex-direction: column; */
-    /* margin-left: 10px; */
-    /* flex: 1 2 0; */
+    flex-direction: column; 
+    margin-left: 10px;
+     flex: 1 2 0;
     height: 40px;
     flex-basis: 20px;
-    /* height: 40px; */
-}
-
-.three {
+     height: 40px;
+ } */
+  /* .one {
     background-color: red;
     display: flex;
     justify-content: space-around;
@@ -26,12 +27,17 @@
     gap: 10px;
     border: 1px solid darkred;
 
-}
+} */
 
+.one {
+    width: 40px;
+    height: 40px;
+    flex: 1;
+}
 
 .flex-container{
     background-color: lightblue;
-    width: 1200px;
+    width: 100%;
     gap: 1rem;
     text-align: center;
     padding: 10px;
