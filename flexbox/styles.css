@@ -1,7 +1,7 @@
 .flex-container > * {
     border: 1px solid;
     background-color: peachpuff;
-    height: 100px;  
+    /* height: 100px;   */
     /* flex: 1 1 0;  */
     /* outline: 2px solid red; */
     /* width: 100px; */
@@ -38,6 +38,7 @@
 .flex-container{
     background-color: lightblue;
     width: 100%;
+    height: auto;
     gap: 1rem;
     text-align: center;
     padding: 10px;
