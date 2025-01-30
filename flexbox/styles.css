@@ -32,14 +32,15 @@
 .one {
     width: 40px;
     height: 40px;
-    flex: 1;
+    flex: 1 0 0;
 }
 
 .flex-container{
     background-color: lightblue;
-    width: 100%;
+    width: 900px;
+    flex-wrap: wrap;
     height: auto;
-    gap: 1rem;
+    gap: 5rem;
     text-align: center;
     padding: 10px;
     display: flex;
