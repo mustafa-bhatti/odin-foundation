@@ -30,23 +30,28 @@
 } */
 
 .one {
-    width: 40px;
+
+    width: 60;
     height: 40px;
-    flex: 1 0 0;
+    /* flex: 1 0 auto; */
+    flex-shrink: 0;
 }
 
 .flex-container{
+    /* column-gap: 20px;
+     */
+    row-gap: 10px;
     background-color: lightblue;
-    width: 900px;
+    width: 500px;
     flex-wrap: wrap;
     height: auto;
-    gap: 5rem;
+    gap: 4rem;
     text-align: center;
     padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 
-    /* align-items: center; */
+    /* align-items: flex-start; */
 }
 
 * {
