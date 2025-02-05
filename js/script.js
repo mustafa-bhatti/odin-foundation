@@ -12,3 +12,13 @@ const max = 57;
 const actual = max - 13;
 const percentage = actual/max;
 console.log("Percentage" , percentage);  
+
+const button = document.querySelector("button");
+
+function greet() {
+    const name = prompt("Enter your name");
+    const field = document.querySelector(".test");
+    field.textContent = `Hello ${name}`;
+}
+button.addEventListener("click", greet);
+
