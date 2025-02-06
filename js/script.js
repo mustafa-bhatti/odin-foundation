@@ -22,3 +22,10 @@ function greet() {
 }
 button.addEventListener("click", greet);
 
+// string methods
+console.log("finding word at index position");
+b = "hello";
+console.log(b.length);
+console.log(b.charAt(0));
+console.log(b.at(1))
+console.log(b[2])
