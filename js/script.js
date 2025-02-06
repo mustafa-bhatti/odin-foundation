@@ -29,3 +29,14 @@ console.log(b.length);
 console.log(b.charAt(0));
 console.log(b.at(1))
 console.log(b[2])
+//slicing
+let str = "Mango, Yellow, Blue";
+console.log(str.slice(0,5));
+console.log(str.slice(6)); //slices out words before the index number
+console.log(str.substring(6));
+console.log(str.toLocaleUpperCase());
+let concat_str = b.concat(str, " hh");
+console.log(concat_str);
+let concat_str2 = b + " " + str;
+console.log("This is concat using + operator ",concat_str2);   
+//padding
