@@ -40,3 +40,14 @@ console.log(concat_str);
 let concat_str2 = b + " " + str;
 console.log("This is concat using + operator ",concat_str2);   
 //padding
+b="412";
+let padded = b.padEnd(5,"x")
+console.log(padded);
+//repeat
+console.log(str.repeat(5)); 
+//replacing
+console.log(str.replace("Mango","Bird"));
+console.log(str.replace(/mango/i,"Bird"));//use /i to specify case insensitive
+console.log(str.replaceAll(/Mango/g,"Bird"));
+//convert into array
+console.log(str.split(","));
