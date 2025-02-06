@@ -51,3 +51,16 @@ console.log(str.replace(/mango/i,"Bird"));//use /i to specify case insensitive
 console.log(str.replaceAll(/Mango/g,"Bird"));
 //convert into array
 console.log(str.split(","));
+
+// * Change this code so it returns `true` when the number is greater than or equal to 10, and false if it is less than 10
+// */
+
+number = Number(prompt("enter a number"));
+
+function numberChecker() {
+   if(number >= 10) {
+       return true;
+   } else {
+       return false;
+   }
+}
