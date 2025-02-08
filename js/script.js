@@ -20,7 +20,8 @@ function greet() {
     const field = document.querySelector(".test");
     field.textContent = `Hello ${name}`;
 }
-button.addEventListener("click", greet);
+// button.addEventListener("click", greet);
+
 
 // string methods
 console.log("finding word at index position");
@@ -55,7 +56,7 @@ console.log(str.split(","));
 // * Change this code so it returns `true` when the number is greater than or equal to 10, and false if it is less than 10
 // */
 
-number = Number(prompt("enter a number"));
+// number = Number(prompt("enter a number"));
 
 function numberChecker() {
    if(number >= 10) {
@@ -72,3 +73,10 @@ const lastName = "Stevenson";
 const greeting = "Hello! My name is " + firstName + " " + lastName + " and I am " + (thisYear - birthYear) + " years old.";
 
 console.log(greeting);
+
+const textbox = document.getElementById("inp");
+const output = document.querySelector(".user-text");
+
+textbox.addEventListener("keydown", (event) => {
+    output.textContent += event;
+})
