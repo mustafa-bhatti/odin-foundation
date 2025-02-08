@@ -77,9 +77,25 @@ console.log(greeting);
 const textbox = document.getElementById("inp");
 const output = document.querySelector(".user-text");
 
-textbox.addEventListener("keypress", (event) => {
-    if (output.textContent.length == 0) {
-    output.textContent = "You pressed : ";
-    }
-    output.textContent += event.key;
+// textbox.addEventListener("keypress", (event) => {
+//     if (output.textContent.length == 0) {
+//     output.textContent = "You pressed : ";
+//     }
+//     output.textContent += event.key;
+// })
+
+function add7(num) {
+    console.log(num+7);
+}
+function multiply(num1,num2) {
+    console.log(num1 * num2);
+}
+const num1 = document.getElementById("num1");
+const num2 = document.getElementById("num2");
+const btnEnter = document.querySelector('.enter');
+btnEnter.addEventListener("click", () => {
+
+    console.log(`Num1 = ${num1.value}  Num2 = ${num2.value}`)
+    add7(+num1.value)
+    multiply(+num1.value,+num2.value)
 })
