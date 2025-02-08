@@ -77,6 +77,9 @@ console.log(greeting);
 const textbox = document.getElementById("inp");
 const output = document.querySelector(".user-text");
 
-textbox.addEventListener("keydown", (event) => {
-    output.textContent += event;
+textbox.addEventListener("keypress", (event) => {
+    if (output.textContent.length == 0) {
+    output.textContent = "You pressed : ";
+    }
+    output.textContent += event.key;
 })
