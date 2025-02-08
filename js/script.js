@@ -83,6 +83,13 @@ const output = document.querySelector(".user-text");
 //     }
 //     output.textContent += event.key;
 // })
+function capitalize(userString) {
+    let x = userString[0].toUpperCase();
+    console.log(x+userString.slice(1).toLowerCase());
+}
+capitalize("yooooo"); // => Yooooo
+capitalize("HELLO"); // => Hello
+
 
 function add7(num) {
     console.log(num+7);
