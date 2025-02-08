@@ -90,6 +90,10 @@ function capitalize(userString) {
 capitalize("yooooo"); // => Yooooo
 capitalize("HELLO"); // => Hello
 
+function lastLetter(userString) {
+    console.log(userString.at(-1));
+}
+lastLetter("Yess");
 
 function add7(num) {
     console.log(num+7);
