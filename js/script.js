@@ -110,3 +110,4 @@ btnEnter.addEventListener("click", () => {
     add7(+num1.value)
     multiply(+num1.value,+num2.value)
 })
+console.log("testing");
