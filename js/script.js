@@ -75,7 +75,7 @@ const greeting = "Hello! My name is " + firstName + " " + lastName + " and I am 
 console.log(greeting);
 
 const textbox = document.getElementById("inp");
-const output = document.querySelector(".user-text");
+// const output = document.querySelector(".user-text");
 
 // textbox.addEventListener("keypress", (event) => {
 //     if (output.textContent.length == 0) {
@@ -110,4 +110,37 @@ btnEnter.addEventListener("click", () => {
     add7(+num1.value)
     multiply(+num1.value,+num2.value)
 })
-console.log("testing");
+
+const fruits = ["apple", "mango", "banana", "watermelon"];
+console.log(fruits.join(" + "));
+console.log(fruits.toString());
+fruits.push("Grapes");
+console.log(fruits.shift());
+console.log(fruits.unshift("kiwi"));
+console.log(fruits);
+// fruits.copyWithin(2,0,2);
+fruits.splice(2,0,"Melon")
+console.log(fruits);
+
+
+const output = document.querySelector('.output');
+output.textContent = "";
+
+let i = 10;
+
+for (i = 0; i >=0; i--) {
+    const para = document.createElement('p');
+    if (i == 10) {
+        para.textContent = "Blast Off!";
+    }
+    else if (i == 0) {
+        para.textContent = "Blast Off!";
+    }
+    else {
+        para.textContent = i;
+    }
+    output.appendChild(para);
+
+}
+
+
