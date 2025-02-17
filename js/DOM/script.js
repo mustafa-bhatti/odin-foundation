@@ -28,3 +28,8 @@ p.textContent = "Me too";
 div.appendChild(p);
 
 container.appendChild(div);
+
+const btn = document.querySelector(".btn");
+btn.onclick =  () => {
+    alert("Hello World");
+}
