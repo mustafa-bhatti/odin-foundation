@@ -33,3 +33,18 @@ const btn = document.querySelector(".btn");
 btn.onclick =  () => {
     alert("Hello World");
 }
+
+const btn2 = document.querySelector("#btn");
+btn2.addEventListener("click", (e) => {
+    const originalSize = window.getComputedStyle(e.target).fontSize;
+    console.log(originalSize);
+    // alert("Clicked Method 3");
+    if (e.target.style.fontSize == "34px") {
+        e.target.style.fontSize = "13.3333px";
+    }
+    else {  
+        e.target.style.fontSize = "34px";
+    }
+
+    console.log("Button is Pressed - ",e.target.textContent);
+})
