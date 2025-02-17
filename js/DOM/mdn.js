@@ -3,14 +3,23 @@ const input = document.querySelector("input");
 const btn = document.querySelector("button");
 
 function addBtn() {
+    ul.addEventListener("click", addBtn);
     let item = input.value;
+    input.focus();
+
+    if (item=='') {
+        return false;
+    }
     input.value = '';
     console.log(item);
+
     const li = document.createElement("li");
     const span = document.createElement("span");  
     const delButton = document.createElement("button");
+
     li.appendChild(span);
     li.appendChild(delButton);
+
     span.textContent = item;
     delButton.textContent = "Delete";
 
@@ -18,7 +27,6 @@ function addBtn() {
         ul.removeChild(li);
     })
     ul.appendChild(li);
-    input.focus();
 }
 
 btn.addEventListener("click", addBtn);
