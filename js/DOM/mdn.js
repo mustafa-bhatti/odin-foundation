@@ -18,6 +18,7 @@ function addBtn() {
         ul.removeChild(li);
     })
     ul.appendChild(li);
+    input.focus();
 }
 
 btn.addEventListener("click", addBtn);
