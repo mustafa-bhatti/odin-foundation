@@ -30,3 +30,10 @@ function addBtn() {
 }
 
 btn.addEventListener("click", addBtn);
+
+
+const playTime = (funky) => {
+    return funky  + " music";
+}
+console.log(playTime("hiphop"));
+//Callbacks
