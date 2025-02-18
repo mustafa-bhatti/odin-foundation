@@ -36,4 +36,4 @@ const playTime = (funky) => {
     return funky  + " music";
 }
 console.log(playTime("hiphop"));
-//Callbacks
+//Callbacks are basically functions given as a parameter to another function
