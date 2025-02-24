@@ -33,5 +33,15 @@ function filterRange(arr,start,end) {
     return arr.filter(item => item >= start && item <=end)
 }
 let filtered = filterRange(arr,1,4);
-console.log(filtered);
+
+
+arr = ["HTML", "JavaScript", "CSS"];
+
+function copySorted(arr) {
+    let tempArr = [...arr];
+    return tempArr.sort()
+}
+
+let sorted = copySorted(arr);
+console.log(sorted);
 console.log(arr);
