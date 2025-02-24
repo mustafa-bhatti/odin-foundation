@@ -14,7 +14,7 @@ function camelize(str) {
     let restArr = arr.map(x =>x[0].toUpperCase()+x.slice(1)).join("");
     console.log(firstElement+restArr);
 
-// }
+}
 //Solution from the internet
 // function camelize(str) {
 //     return str
@@ -28,3 +28,10 @@ function camelize(str) {
 //   }
 
 camelize("backGRound-color-yess");
+arr = [5,3,8,1]
+function filterRange(arr,start,end) {
+    return arr.filter(item => item >= start && item <=end)
+}
+let filtered = filterRange(arr,1,4);
+console.log(filtered);
+console.log(arr);
